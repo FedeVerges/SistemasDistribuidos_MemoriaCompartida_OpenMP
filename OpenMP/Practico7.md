@@ -3,7 +3,8 @@
 **Alumno :** Federico A. Verges.
 
 ## Ejercicios Practicos
-En mi caso, todos los ejercicios practicos se compilan con el commando "gcc -o **nombre del ejecutable** -lm -fopenmp **Nombre del archivo.c**" y se ejecutan con "./**Ejecutable**".
+
+En mi caso, todos los ejercicios practicos se compilan con el commando "gcc -std=c99 -o **nombre del ejecutable** -lm -fopenmp **Nombre del archivo.c**" y se ejecutan con "./**Ejecutable**".
 
 
 

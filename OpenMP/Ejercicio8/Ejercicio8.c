@@ -95,8 +95,7 @@ double Paralell(int *elements, int n, int laps)
 {
     double start, finish;
     double time_speedup = 0;
-    int num_threads = 4;
-    //omp_get_num_threads; // obtain the num. of threads.
+    int num_threads = omp_get_num_threads; // obtain the num. of threads.
     if (num_threads >= 4)
     {
         num_threads = 4;
@@ -146,6 +145,7 @@ double Paralell(int *elements, int n, int laps)
         time_speedup += (double)((finish - start));
     }
     return time_speedup / laps;
+
 }
 
 // ** Main Program ** //
